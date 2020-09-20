@@ -3,6 +3,7 @@
     --title-text-color: #000000;
     --accent-color: #18A0FB;
     --primary-white-color: #FFFFFF;
+    --secondary-bg-color: #F5F5F5;
 }
     
     body {
@@ -32,7 +33,18 @@ color: var(--accent-color);
 }
 
 .list {
-list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.container {
+margin-left: auto;
+margin-right: auto;
+width: 1440px;
+padding-left: 20px;
+padding-right: 20px;
 }
 
 /* Site nav */
@@ -52,28 +64,47 @@ color: var(--title-text-color);
 }
 
 /* Hero */
+.hero {
+    text-align: center;
+}
+
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 40px;
     color: var(--title-text-color);
 
     font-weight: 400;
     font-size: 56px;
     line-height: 1.43;
-    text-align: center;
+
 
 }
 
 /* Section */
+.section {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
 .section-title {
 color: var(--title-text-color);
 
 font-weight: 400;
 font-size: 48px;
 line-height: 1.5;
-text-align: center;
+
+margin-top: 0;
+margin-bottom: 60px;
 
 }
 
+.section-title.centered {
+    text-align: center;
+}
+
 .section-description {
+    margin-top: 0;
+    margin-bottom: 80px;
     font-size: 36px;
     line-height: 1.39;
 }
@@ -87,15 +118,33 @@ text-align: center;
     font-size: 24px;
     line-height: 1.5;
 
+    margin-top:0;
+    margin-bottom: 24px;
+
 }
 
+.feature-list p {
+    margin-top:0;
+    margin-bottom: 32px;
+}
 /* .feature-list .link {
     color:  var(--accent-color);
 } */
 
+.section.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 /* Examples */
- 
+.work-list > .item {
+    padding-top: 80px;
+    padding-bottom: 80px;
+} 
+
+.work-list > .item:nth-child(2n) {
+background-color: var(--secondary-bg-color);
+}
 
 /* Button */
 .button {
@@ -106,18 +155,25 @@ text-align: center;
     font-size: 15px;
     line-height: 1.2;
     text-decoration: none;
+
+    display: inline-block;
+    min-width: 130px;
+    border-radius: 6px;
+    padding: 11px 34px;
+    text-align:center;
+    border: 1px solid transparent;
 }
 
 .button.primary {
     color: var(--primary-white-color);
 background-color: var(--accent-color);
 
-border-color: transparent;
 }
 
 .button.secondary {
     color: var(--accent-color);
     background-color: var(--primary-white-color);
     border-color: transparent;
+    border-color: var(--accent-color);
 }
 

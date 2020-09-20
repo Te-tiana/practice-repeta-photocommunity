@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
         <!-- Header of the document -->
     <header class="page-header">
-        
-        <nav>
+            <nav class="container">
             <a href="./index.html" class="logo">
                 <img src="./images/logo.svg" alt="our company logo">
                 photo
@@ -22,7 +21,7 @@
                 <li href="#" class="link">Pricing</li>
                 <li href="#" class="link">Community</li>
                 <li href="#" class="link">Support</li>
-                <li><a href="./wireframe.html">Wireframe</a></li>
+                <!-- <li><a href="./wireframe.html">Wireframe</a></li> -->
             </ul>
             
             <ul class="auth-nav list">
@@ -34,16 +33,17 @@
 
     <main>
 <!-- Hero -->
-<div>
+
     <section class="hero">
         <h1 class="hero-title">The largest community of photo enthusiasts</h1>
         <a class="button primary" href="#">Join today</a>
     </section>
-</div>
+
 
 <!-- Our advantages and features -->
 <section class="section">
-    <h2 class="section-title">Snap photos and share like <br> never before</h2>
+    <div class="container">
+        <h2 class="section-title">Snap photos and share like <br> never before</h2>
     <ul class="feature-list list">
         <li>
             <h3 class="title">Lorem, ipsum dolor.</h3>
@@ -67,64 +67,74 @@
             <a class="button secondary" href="#">Learn more</a>
         </li>
     </ul>
+</div>
+    
 </section>
 
 <!-- Examples of works -->
-<section class="section">
-    <h2 class="section-title">Examples of works</h2>
+<section class="section no-padding">
+    <div class="container">
+        <h2 class="section-title">Examples of works</h2>
     <ul class="work-list list">
-        <li>
+        <li class="item">
             <img src="./images/placeholder.png" alt="photo example" width="750">
             <h3 class="title">Lorem ipsum dolor sit amet.</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, obcaecati?</p>
         </li>
-        <li>
+        <li class="item">
             <img src="./images/placeholder.png" alt="photo example" width="750">
             <h3 class="title">Lorem ipsum dolor sit amet.</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, obcaecati?</p>
         </li>
     </ul>
+</div>
+    
 </section>
 
-<!-- Testimonials -->
+<!-- Testimonials Clients-->
 <section class="section">
-    <h2 class="section-title">You're in good company</h2>
-    <p class="section-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate ullam aliquam libero.</p>
+    <div class="container">
+        <h2 class="section-title centered">You're in good company</h2>
+    <p class="section-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate ullam aliquam libero.
+    </p>
     <ul class="list">
-<li>
-    <a href=""><img src="./images/icon.svg" alt="company logo"></a>
-</li>
-<li>
-    <a href=""><img src="./images/icon.svg" alt="company logo"></a>
-</li>
-<li>
-    <a href=""><img src="./images/icon.svg" alt="company logo"></a>
-</li>
-<li>
-    <a href=""><img src="./images/icon.svg" alt="company logo"></a>
-</li>
-<li>
-    <a href=""><img src="./images/icon.svg" alt="company logo"></a>
-</li>
-<li>
-    <a href=""><img src="./images/icon.svg" alt="company logo"></a>
-</li>
-<li>
-    <a href=""><img src="./images/icon.svg" alt="company logo"></a>
-</li>
-<li>
-    <a href=""><img src="./images/icon.svg" alt="company logo"></a>
-</li>
-    </ul>
+        <li>
+            <a href=""><img src="./images/icon.svg" alt="company logo"></a>
+        </li>
+        <li>
+            <a href=""><img src="./images/icon.svg" alt="company logo"></a>
+        </li>
+        <li>
+            <a href=""><img src="./images/icon.svg" alt="company logo"></a>
+        </li>
+        <li>
+            <a href=""><img src="./images/icon.svg" alt="company logo"></a>
+        </li>
+        <li>
+            <a href=""><img src="./images/icon.svg" alt="company logo"></a>
+        </li>
+        <li>
+            <a href=""><img src="./images/icon.svg" alt="company logo"></a>
+        </li>
+        <li>
+            <a href=""><img src="./images/icon.svg" alt="company logo"></a>
+        </li>
+        <li>
+            <a href=""><img src="./images/icon.svg" alt="company logo"></a>
+        </li>
+    </ul></div>
+    
     
 </section>
 
 <!-- signup section -->
-<section>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, sunt?</p>
+<section class="section">
+    <div class="container">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, sunt?</p>
+    <a class="button primary" href="">Join today</a>
+        <a class="button secondary" href="">Contact us</a>
+    </div> 
 
-<div><a class="button primary" href="">Join today</a>
-<a class="button secondary" href="">Contact us</a></div>
 
 </section>
 
