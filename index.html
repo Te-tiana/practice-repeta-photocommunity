@@ -11,7 +11,7 @@
 <body>
         <!-- Header of the document -->
     <header class="page-header">
-            <nav class="container">
+            <nav class="container main-nav">
             <a href="./index.html" class="logo">
                 <img src="./images/logo.svg" alt="our company logo">
                 photo
@@ -25,8 +25,8 @@
             </ul>
             
             <ul class="auth-nav list">
-                <li><a class="button secondary" href="#">Log in</a></li>
-                <li><a class="button primary" href="#">Register</a></li>
+                <li class="item"><a class="button secondary" href="#">Log in</a></li>
+                <li class="item"><a class="button primary" href="#">Register</a></li>
             </ul>
         </nav>
     </header>
@@ -45,23 +45,24 @@
     <div class="container">
         <h2 class="section-title">Snap photos and share like <br> never before</h2>
     <ul class="feature-list list">
-        <li>
+        <li class="item">
             <h3 class="title">Lorem, ipsum dolor.</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt cum inventore aut veniam natus facere
-                reprehenderit animi consectetur omnis enim!</p>
+                </p>
+                <a class="button secondary" href="#">Learn more</a>
         </li>
-        <a class="button secondary" href="#">Learn more</a>
-        <li>
+        
+        <li class="item">
             <h3 class="title">Lorem, ipsum dolor.</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsum.</p>
             <a class="button secondary" href="#">Learn more</a>
         </li>
-        <li>
+        <li class="item">
             <h3 class="title">Lorem, ipsum dolor.</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, beatae.</p>
             <a class="button secondary" href="#">Learn more</a>
         </li>
-        <li>
+        <li class="item">
             <h3 class="title">Lorem, ipsum dolor.</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, modi.</p>
             <a class="button secondary" href="#">Learn more</a>
@@ -78,14 +79,15 @@
     <ul class="work-list list">
         <li class="item">
             <img src="./images/placeholder.png" alt="photo example" width="750">
-            <h3 class="title">Lorem ipsum dolor sit amet.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, obcaecati?</p>
+            <div class="content"><h3 class="title">Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, obcaecati?</p></div>
         </li>
         <li class="item">
             <img src="./images/placeholder.png" alt="photo example" width="750">
-            <h3 class="title">Lorem ipsum dolor sit amet.</h3>
+            <div class="content">
+                <h3 class="title">Lorem ipsum dolor sit amet.</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, obcaecati?</p>
-        </li>
+        </div> </li>
     </ul>
 </div>
     
@@ -95,9 +97,9 @@
 <section class="section">
     <div class="container">
         <h2 class="section-title centered">You're in good company</h2>
-    <p class="section-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate ullam aliquam libero.
+    <p class="section-description centered">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate ullam aliquam libero.
     </p>
-    <ul class="list">
+    <ul class="client-list list">
         <li>
             <a href=""><img src="./images/icon.svg" alt="company logo"></a>
         </li>
@@ -129,9 +131,10 @@
 
 <!-- signup section -->
 <section class="section">
-    <div class="container">
+    
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, sunt?</p>
-    <a class="button primary" href="">Join today</a>
+    <div class="container sign-up">
+<a class="button primary" href="">Join today</a>
         <a class="button secondary" href="">Contact us</a>
     </div> 
 
